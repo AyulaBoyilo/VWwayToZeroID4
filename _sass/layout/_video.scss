@@ -1,0 +1,44 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.video__wrapper {
+    padding-top: 78.5px !important;
+
+    @include for-phone {
+        padding-top: 32px !important;
+    }
+
+    @include for-tablet {
+        max-width: 526px;
+        padding-top: 42px !important;
+    }
+
+    @include for-tablet-landscape {
+        max-width: 737px !important;
+    }
+}
+
+.video-2 {
+    justify-content: center;
+    display: flex;
+    height: 60vw;
+
+    @include for-phone {
+        height: 150vw;
+    }
+}
+
+.video-3 {
+    justify-content: center;
+    display: flex;
+    height: 35vw;
+    margin-top: 75px !important;
+    padding: 50px !important;
+
+    @include for-phone {
+        height: 50vw;
+        padding: 0!important;
+        margin-top: 50px !important;
+        margin-bottom: 50px !important;
+    }
+}

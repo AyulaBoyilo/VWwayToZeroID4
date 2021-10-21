@@ -1,0 +1,22 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.negative {
+    &_dark {
+        background-color: black;
+        color: white;
+        margin-bottom: 2px;
+        padding: 5px 20px 5px 10px;
+    }
+    &_light {
+        background-color: white;
+        color: black;
+        margin-bottom: 2px;
+        padding: 5px 20px 5px 10px;
+    }
+}
+
+.back_dark {
+    background-color: black;
+    padding: 30px 0;
+}

@@ -1,0 +1,121 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.header {
+    background: url('../../assets/images/header_suma@3x.jpg') no-repeat bottom center / cover;
+    display: flex;
+    height: 42.6vw;
+    justify-content: flex-end;
+    font-family: $family-primary;
+    padding: 12vw 8.8vw 0;
+
+    @include for-phone {
+        background: url('../../assets/images/header_suma.jpg') no-repeat bottom center / cover;
+        height: 220px;
+    }
+
+    @include for-tablet {
+        background: url('../../assets/images/header_suma@2x.jpg') no-repeat bottom center / cover;
+        height: 47.65vw;
+        padding: 50px 15vw;
+    }
+
+    @include for-tablet-landscape {
+        height: 37.5vw;
+    }
+
+    @include for-desktop {
+        height: 49.7vw;
+    }
+
+    @include for-fullhd {
+        justify-content: center;
+        padding-top: 9.5vw;
+    }
+
+
+    &__wrapper {  
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include for-fullhd {
+            align-items: center;
+        }
+    }
+
+    .subhead {
+        align-items: flex-end;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 10px;
+        width: 100%;
+
+        @include for-tablet {
+            border-bottom: 0px;
+        }
+
+        @include for-phone {
+            border-bottom: 0px;
+        }
+    }
+
+    h1, h3 {
+        color: white;
+        line-height: 1.11;
+    }
+
+    h1 {
+        font-size: 6.77vw;
+        text-align: center;
+        text-transform: uppercase;
+        
+        @include for-tablet {
+            font-size: 5.85vw;
+        }
+
+        @include for-phone {
+            font-size: 8.33vw;
+        }
+
+        @include for-desktop {
+            font-size: 7.32vw;
+        }
+    }
+
+    h3 {
+        font-size: 6.77vw;
+        padding: 12px 0 0;
+        position: relative;
+        text-align: right;
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 100%;
+            height: 3.8px;
+            background-color: white;
+            position: absolute;
+            top: 7px;
+            left: 3px;
+
+            @include for-fullhd {
+                width: 83.5%;
+                left: initial;
+                right: 0;
+            }
+        }
+
+        @include for-tablet {
+            font-size: 3.9vw;
+        }
+
+        @include for-phone {
+            font-size: 5.55vw;
+        }
+
+        @include for-desktop {
+            font-size: 5.85vw;
+        }
+    }
+}

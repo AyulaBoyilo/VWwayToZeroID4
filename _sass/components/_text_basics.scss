@@ -1,0 +1,48 @@
+@use '../utilities/' as *;
+@use '../base/' as *;
+
+.ln-hght-50 {
+  line-height: 50px;
+
+  @include for-desktop {
+    line-height: 30px;
+  }
+
+  @include for-tablet {
+    line-height: 30px;
+  }
+
+  @include for-phone {
+    line-height: 30px;
+  }
+}
+
+.m-right {
+  margin-right: 140px;
+
+  @include for-tablet {
+    margin-right: 20px;
+  }
+  @include for-phone {
+    margin-right: 0;
+  }
+}
+
+.center-horiz {
+  display: flex;
+  align-items: center;
+}
+
+.bigger_text {
+  font-size: 40px;
+
+  @include for-desktop {
+    font-size: 18px;
+  }
+  @include for-tablet {
+    font-size: 18px;
+  }
+  @include for-phone {
+    font-size: 18px;
+  }
+}

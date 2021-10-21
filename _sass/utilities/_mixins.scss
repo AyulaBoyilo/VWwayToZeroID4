@@ -1,0 +1,20 @@
+//** MEDIA QUERIES **
+
+@mixin for-phone {
+    @media (max-width: 767px) { @content; }
+  }
+  @mixin for-tablet {
+    @media (min-width: 768px) and (max-width: 1024px) { @content; }
+  }
+  @mixin for-tablet-landscape {
+    @media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape) { @content; }
+  }
+  @mixin for-desktop {
+    @media (min-width: 1025px) and (max-width: 1365px) { @content; }
+  }
+  @mixin for-widescreen {
+    @media (min-width: 1366px) and (max-width: 1407px) { @content; }
+  }
+  @mixin for-fullhd {
+    @media (min-width: 1408px) { @content; }
+  }
