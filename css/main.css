@@ -199,7 +199,7 @@ body {
 @media (max-width: 767px) {
   .header {
     background: url("../../assets/images/header_suma.jpg") no-repeat bottom center/cover;
-    height: 220px;
+    height: 61vw;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -574,15 +574,11 @@ body {
   }
 }
 
-.block-3 {
-  margin-top: -50px !important;
-}
 @media (min-width: 1025px) and (max-width: 1365px) {
   .block-3 {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: -150px !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -604,9 +600,6 @@ body {
   }
 }
 
-.block-4 {
-  margin-top: -150px !important;
-}
 @media (min-width: 1025px) and (max-width: 1365px) {
   .block-4 {
     -webkit-box-align: start;
@@ -620,7 +613,7 @@ body {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: flex-end;
-    margin-top: -500px !important;
+    margin-top: -400px !important;
   }
   .block-4 .text__content {
     max-width: 200px;
@@ -645,7 +638,6 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: -200px !important;
 }
 @media (max-width: 767px) {
   .glavni_likovi {
@@ -655,6 +647,23 @@ body {
             flex-direction: column;
     margin-top: 20px !important;
     width: 80vw !important;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1365px) {
+  .glavni_likovi {
+    margin-top: 40px !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .glavni_likovi {
+    margin-top: 40px !important;
+  }
+}
+@media (min-width: 1408px) {
+  .glavni_likovi {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
