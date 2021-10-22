@@ -2,7 +2,7 @@
 @use '../base/' as *;
 
 .header {
-    background: url('../../../assets/images/header_suma@3x.jpg') no-repeat bottom center / cover;
+    background: url('../assets/images/header_suma@3x.jpg') no-repeat bottom center / cover;
     display: flex;
     height: 42.6vw;
     justify-content: flex-end;
@@ -10,12 +10,12 @@
     padding: 12vw 8.8vw 0;
 
     @include for-phone {
-        background: url('../../../assets/images/header_suma.jpg') no-repeat bottom center / cover;
+        background: url('../assets/images/header_suma.jpg') no-repeat bottom center / cover;
         height: 61vw;
     }
 
     @include for-tablet {
-        background: url('../../../assets/images/header_suma@2x.jpg') no-repeat bottom center / cover;
+        background: url('../assets/images/header_suma@2x.jpg') no-repeat bottom center / cover;
         height: 47.65vw;
         padding: 50px 15vw;
     }
